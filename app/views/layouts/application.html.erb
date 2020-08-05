@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bien Reviews - the best restuarants in the world</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+ 
+  </head>
+
+  <body>
+    <header>
+      <h1><%= link_to "Bien Reviews", root_path %></h1>
+      <h2>The best restuarants in the world</h2>
+      <nav>
+        <%= link_to "Add a review", new_review_path %>
+      </nav>
+    </header>
+    <%= yield %>
+    <footer>
+    Copyright 2020 Bien Review
+    </footer>
+  </body>
+</html>
