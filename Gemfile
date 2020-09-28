@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.5'
+ruby '2.6.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
@@ -9,11 +9,12 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 
 # Use sqlite3 as the database for Active Record
 group :development do
-gem 'sqlite3', '~> 1.4'
+ gem 'sqlite3', '~> 1.4'
 end
 
 group :production do
-gem 'pg'
+ gem 'pg'
+ gem 'rails_12factor'
 end
 
 # Use Puma as the app server
